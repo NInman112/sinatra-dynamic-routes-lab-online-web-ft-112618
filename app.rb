@@ -20,7 +20,7 @@ class App < Sinatra::Base
 
   get "/say/:word1/:word2/:word3/:word4/:word5" do
     phrase = []
-    params.each.with_index do |key,value,index|
+    params.each do |key,value|
       binding.pry
       if value < params.count
         phrase << "#{value} "
