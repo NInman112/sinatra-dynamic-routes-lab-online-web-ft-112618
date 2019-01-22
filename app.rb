@@ -32,10 +32,10 @@ class App < Sinatra::Base
   phrase.join
   end
 
-  get "/:operation/:number1/:number2" do 
-    @total = params[:operation]
+  get "/:operation/:number1/:number2" do
+    @operator = params[:operation]
     binding.pry
 
-  end 
-  
+  end
+
 end
