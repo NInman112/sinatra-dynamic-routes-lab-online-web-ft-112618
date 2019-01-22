@@ -22,8 +22,8 @@ class App < Sinatra::Base
     phrase = []
     params.each do |key,value|
       phrase << "#{value} "
-      binding.pry
-
     end
+    binding.pry
+
   end
 end
