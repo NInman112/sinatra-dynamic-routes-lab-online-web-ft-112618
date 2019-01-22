@@ -34,6 +34,11 @@ class App < Sinatra::Base
 
   get "/:operation/:number1/:number2" do
     @operator = params[:operation]
+    @num1 = params[:number1]
+    @num2 = params[:number2]
+
+    if @operator == "add"
+      @num1 + @num2
     binding.pry
 
   end
