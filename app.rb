@@ -38,6 +38,7 @@ class App < Sinatra::Base
     @num2 = params[:number2]
 
     if @operator == "add"
+      binding.pry
       "#{@num1 + @num2}"
     end
     #binding.pry
