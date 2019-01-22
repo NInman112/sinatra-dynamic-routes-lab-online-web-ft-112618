@@ -28,9 +28,10 @@ class App < Sinatra::Base
       else
         phrase << "#{value}."
       end
-      phrase.join.join
+      binding.pry
+      phrase.join
     end
-    binding.pry
+    
 
   end
 end
